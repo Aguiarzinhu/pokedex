@@ -1,0 +1,252 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.sobre {
+    color:  #ffffff;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 20px;
+    margin: 20px;
+}
+h1{
+    text-align: center;
+    color:  #000000;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+.titulo{
+    color: rgb(255, 255, 255);
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 10rem; 
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cabecalho{
+    background-image: url("https://www.kindpng.com/picc/m/412-4121174_embroidery-designs-music-notes-hd-png-download.png");
+    background-size: 4%;
+  background-repeat: no-repeat;
+    border: 2px solid darkgray;
+    color: #000; text-shadow: 1px 1px 0 #fafafa;
+    height: 50px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    text-align: center;    
+}
+
+
+  .display-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+   
+}
+
+.sobre-musica__container {
+    text-align: left;
+    width: 30%;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 10rem;
+    border-radius: 10px;
+    
+}
+
+
+.sobre-musica__container-img {
+    margin-bottom: 1rem;
+    max-width: 15rem;
+    
+}
+
+.sobre-musica__container:hover {
+    background-color:rgb(245, 245, 245, 0.5)
+}
+
+.sobre-musica__container-link,
+.sobre-musica__container-paragrafo {
+    color: rgb(255, 255, 255);
+    order: 0;
+    flex:0 1 auto;
+    align-self: auto;
+}
+
+.sobre-musica__container-paragrafo {
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+.rodape__paragrafo {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1px;
+    font-size: 1rem;
+}
+.rodape__paragrafo2 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+img{
+  max-width:50%;
+  max-height:50%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+button {
+    width: 120px;
+    padding: 8px 20px;
+    margin-top: 16px;
+    background-color: #e90707;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.4s;
+    outline: none;
+    color: #ffffff;
+}
+/*O hover vai ficar mais claro quando passar o maouse ou quando selecionar o botão*/
+button:hover {
+    background-color: #ecddf3;
+    color: #3f3d56;
+}
+
+.cabecalho__titulo {
+  margin: 0 10rem 0 0;
+  display: block;
+}
+
+
+@media (min-width: 320px) {
+  .cabecalho {
+    margin-top: 7rem;
+  }
+  .cabecalho__titulo {
+    margin: 0 10rem 0 0;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+  }
+  .cabecalho__titulo {
+    margin: 0 20rem 0 0;
+    font-size: 40px;
+  }
+}
+
+/* SECAO */
+.secao__cabecalho {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #464646;
+  padding: 3rem 0 0 0;
+}
+.secao__cabecalho:after {
+  display: table;
+  content: "}";
+  font-size: 36px;
+  font-weight: lighter;
+  color: #ffffff;
+  margin: -15px auto 10px;
+  transform: rotate(90deg);
+}
+.secao__conteudo {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.secao__formulario {
+  text-align: right;
+}
+
+.secao__formulario fieldset {
+  padding: 0;
+  border: none;
+}
+
+.secao__formulario fieldset:not(:first-child) {
+  margin: 1.5rem 0 0 0;
+}
+.secao__formulario legend {
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+}
+.secao__formulario__grupo {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+.secao__formulario__grupo label {
+  text-align: right;
+  width: 60%;
+  padding: 0.7rem 0.5rem;
+  margin: 0;
+  background-color: #ecddf3;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.secao__formulario__grupo input {
+  width: 40%;
+  padding: 0.7rem 0.5rem;
+  margin: 0;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.secao__formulario__grupo p {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.secao__rodape {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f6f6f6;
+  margin-bottom: 10px;
+}
+.secao__rodape__valor span {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+}
+.secao__rodape__valor small {
+  font-size: 2rem;
+  color: #ecddf3;
+}
+.secao__rodape__legenda {
+  font-size: 1.2rem;
+  color: #3f3d56;
+
+  

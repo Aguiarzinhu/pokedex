@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+  <nav>
+      <img src="img/icon.png"
+<body>
+  <h1>Pokedéx GBC/GBA</h1>
+
+  <h2>Kanto:</h2>
+  <ol>
+    <li>
+      <a href="https://pokemondb.net/pokedex/game/red-blue-yellow" target="_blank">Red/Blue/Yellow Pokedéx</a>
+    </li>
+    <li>
+      <a href="https://pokemondb.net/pokedex/game/firered-leafgreen"
+        target="_blank">Fire Red/Leaf Green Pokedéx</a> 
+
+      
+    </li>
+</ol>
+
+  <div>
+  <h2>Johto:</h2>
+  <ol>
+    <li>
+      <a href="https://pokemondb.net/pokedex/game/gold-silver-crystal"target="_blank">Gold/Silver/Crystal Pokedéx</a> 
+    </li>
+     <li>
+       <a href="https://pokemondb.net/pokedex/game/heartgold-soulsilver"target="_blank">HeartGold/Soulsilver Pokedéx</a> 
+     </li>
+    </ol>
+</div>
+  <div>
+  <h2>Hoenn:</h2>
+  <ol>
+    <li>
+      <a href="https://pokemondb.net/pokedex/game/ruby-sapphire-emerald"target="_blank">Ruby/Saphire/Emeral Pokedéx</a> 
+    </li>
+     <li>
+       <a href="https://pokemondb.net/pokedex/game/omega-ruby-alpha-sapphire"target="_blank">Omega Ruby/Alpha Saphire</a> 
+     </ol>
+  </div>
+</div>
+  <p>------------------------------------------------------</p>
+
+     </nav>
+    <header>
+      <h1>Calcular Dano dos ataques</h1>
+    </header>
+    <main>
+      <section>
+        <article>
+          <div>
+            <fieldset style="width: 50%;">  
+              <legend>Qual o HP do seu pokémon?</legend>
+              <div>
+                <label>HP:</label>
+                <input id="nota-um" type="number" value="0"></input>
+              </div>
+            </fieldset>
+            <fieldset style="width: 50%;">
+              <legend>Qual foi o dano recebido?</legend>
+              <div>
+                <label for="nota-dois">Dano do ataque:</label>
+                <input id="nota-dois" type="number" value="0"/>
+              </div>
+            </fieldset >
+             <fieldset style="width: 50%;">
+              <legend>O ataque foi super efetivo?</legend>
+              <div>
+                <label for="nota-tres">(Não = 1 Sim = 2)</label>
+                <input id="nota-tres" type="number" value="1"/>
+              </div>
+            </fieldset>
+            <fieldset style="width: 50%;">
+              <legend>O ataque foi crítico?</legend>
+              <div>
+                <label for="nota-quatro">(Não = 1 Sim = 2)</label>
+                <input id="nota-quatro" type="number" value="1"/>
+              </div>
+            </fieldset>
+         <button onclick="calcularMediaAluno()">Calcular</button>
+          </div>
+        </article>
+        <footer>
+          <h3>
+            <span id="resposta">Dano recebido: - </span>
+            <p>--------------</p>
+          </h3>
+           <h3>
+            <span id="resultado">Situação: -</span>
+            <p>--------------</p>
+          </h3>
+        </footer>
+      </section>
+      
+    </main>
+    <footer>Feito por Alephinho</footer>
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
